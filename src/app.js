@@ -12,12 +12,9 @@ let when = ['before the class', 'when I was sleeping', 'while I was exercising',
 
 
 window.onload = function() {
-  function numeroParaExcusa(max) {
-    return Math.floor(Math.random()* max)
-  }
 
   function elementoExcusa() {
-  return document.getElementById('excuse').innerHTML = (who[numeroParaExcusa(4)]) +" "+ (action[numeroParaExcusa(4)]) +" "+ (what[numeroParaExcusa(3)]) +" "+ (when[numeroParaExcusa(5)])
+  return document.getElementById('excuse').innerHTML = (who[Math.floor(Math.random()* who.length)]) +" "+ (action[Math.floor(Math.random()* action.length)]) +" "+ (what[Math.floor(Math.random()* what.length)]) +" "+ (when[Math.floor(Math.random()* when.length)])
   
   }
   
